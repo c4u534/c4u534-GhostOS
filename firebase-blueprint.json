@@ -1,0 +1,24 @@
+{
+  "entities": {
+    "Slice": {
+      "title": "Slice",
+      "description": "A single state slice in the SPIFCS architecture.",
+      "type": "object",
+      "properties": {
+        "userId": { "type": "string" },
+        "timestamp": { "type": "number" },
+        "signal": { "type": "string" },
+        "result": { "type": "object" },
+        "ref_hash": { "type": "string" },
+        "active_object": { "type": "string" }
+      },
+      "required": ["userId", "timestamp", "signal", "result", "ref_hash", "active_object"]
+    }
+  },
+  "firestore": {
+    "/slices/{sliceId}": {
+      "schema": "Slice",
+      "description": "Collection of state slices."
+    }
+  }
+}

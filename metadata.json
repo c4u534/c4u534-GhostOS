@@ -1,0 +1,5 @@
+{
+  "name": "Ghost0S - SPIFCS Architecture",
+  "description": "A self-coherent, constraint-bound architecture for discovery and state preservation using SPIFCS and 00 Simulation.",
+  "requestFramePermissions": []
+}
